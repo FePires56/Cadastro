@@ -5,59 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="style-cadastro.css"> 
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto IOT Revolucionário</title>
 </head>
 
 <body>
+    <div class="header">
 
-    <div class="back">
-        <div class="in_cadastro">
-            <h1 class="h1">Cadastro</h1><br>
-            <select class="sel_empresas">
-                <option value="">-Selecione uma Empresa-</option>
-                <option value="empresa1">Empresa1</option>
-                <option value="empresa2">Empresa2</option>
-                <option value="empresa3">Empresa3</option>
-            </select> <br><br>
-            <input placeholder="Nome:" type="text"><br><br>
-            <input placeholder="E-mail:" type="text"> <br><br>
-            <input id="in_senha1" type="password" placeholder="Senha:"><br><br>
-            <input id="in_senha2" type="password" placeholder="Repetir Senha:"><br>
-            <div id="checkbox1">
-                <img id="img_ocultar1" src="imagens/oculto.png" alt="ocultar" style="height: 10px;" onclick="mostrar1()">
-            </div>
-            <div id="checkbox2">
-                <img id="img_ocultar2" src="imagens/oculto.png" alt="ocultar" style="height: 10px;" onclick="mostrar2()">
-            </div>
-
-            <button class="botao1"><a href="login.html">Cadastrar</a></button>
-            <h4 class="h4">Voltar</h4>
+        <div class="container">
+            <h1 class="titulo">Acquatec</h1>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li>Sobre nós</li>
+                <li>Login</li>
+                <li>Cadastro</li>
+                <li>Suporte</li>
+            </ul>
         </div>
     </div>
+    <p>Página login</p>
+    <!--Término do banner-->
+
+    <!--Início do banner-->
+    <div class="banner">
+        <div class="container"> <!--Dá respiro à página-->
+            <div class="card">
+                <h1>Cadastro</h1>
+                <h4>Nome</h4> <input placeholder="Seu Nome" type="text">
+                <h4>E-mail</h4> <input placeholder="Seu E-mail" type="text">
+                <h4>Senha:</h4> <input placeholder="******" type="password">
+                <h4>Repetir Senha:</h4> <input placeholder="******" type="password">
+
+                <button class="btn">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>
-<script>
-    function mostrar1() {
-
-        if (in_senha1.type == "password") {
-            img_ocultar1.src = "imagens/exibindo.png"
-            in_senha1.type = "text"
-        } else {
-            img_ocultar1.src = "imagens/oculto.png"
-            in_senha1.type = "password"
-        }
-    }
-    function mostrar2() {
-
-        if (in_senha2.type == "password") {
-            img_ocultar2.src = "imagens/exibindo.png"
-            in_senha2.type = "text"
-        } else {
-            img_ocultar2.src = "imagens/oculto.png"
-            in_senha2.type = "password"
-        }
-    }
-</script>
